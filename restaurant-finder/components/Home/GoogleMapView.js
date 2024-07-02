@@ -26,7 +26,7 @@ function GoogleMapView({businessList}) {
     <div>
         <LoadScript
             googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
-            mapIds={['327f00d9bd231a33']}
+            mapIds={['3228295e34412d60']}
        >
             <GoogleMap
             mapContainerStyle={containerStyle}
@@ -35,7 +35,7 @@ function GoogleMapView({businessList}) {
              center={
             !selectedBusiness.name?userLocation:selectedBusiness.geometry.location
           }
-            options={{mapId:'327f00d9bd231a33'}}
+            options={{mapId:'3228295e34412d60'}}
             zoom={13}
             onLoad={map=>setMap(map)}
             >

@@ -6,7 +6,7 @@ function RangeSelect({onRadiusChange}) {
     <div className='mt-5 px-2'>
         <h2
         className='font-bold '
-        >Select Radius (In Meter)</h2>
+        >Select Radius (in metres)</h2>
         <input type='range'
         className='w-full h-2 bg-gray-200
         rounded-lg appearance-none
@@ -18,7 +18,7 @@ function RangeSelect({onRadiusChange}) {
         defaultValue={radius}
         />
         <label className='text-gray-500
-        text-[15px]'>{radius} in Meter</label>
+        text-[15px]'>{radius}m</label>
     </div>
   )
 }
