@@ -78,8 +78,8 @@ export default function Home() {
         </div>
         <div className=' col-span-3'>
           <GoogleMapView  businessList={businessList}/>
-          <div className='md:absolute mx-2 w-[90%] md:w-[74%]
-           bottom-36 relative md:bottom-3'>
+          <div className='md:absolute mx-2 w-[98%] md:w-[75%]
+            relative md:bottom-3'>
         {!loading?  <BusinessList businessList={businessList} />
           :
           <div className='flex gap-3'>
