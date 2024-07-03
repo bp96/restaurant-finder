@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <Provider>
           <SelectedBusinessContext.Provider value={{ selectedBusiness, setSelectedBusiness }}>
             <UserLocationContext.Provider value={{ userLocation, setUserLocation }}>
-              <HeaderNavBar />
+              {/* <HeaderNavBar /> */}
               {children}
             </UserLocationContext.Provider>
           </SelectedBusinessContext.Provider>

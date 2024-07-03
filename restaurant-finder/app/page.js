@@ -23,11 +23,12 @@ export default function Home() {
   const {userLocation,setUserLocation}=useContext(UserLocationContext);
 
   // checks if user is signed in, otherwise redirects to login page. Authentication not currently set up so disabled for now.
-  // useEffect(()=>{
-  //   if(!session?.user){
-  //     router.push('/Login')
-  //   }
-  // },[session])
+  useEffect(()=>{
+    if(!session?.user){
+      // router.push('/Login')
+     
+    }
+  },[session])
 
   useEffect(()=>{
     getGooglePlace();

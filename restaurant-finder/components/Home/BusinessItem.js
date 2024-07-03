@@ -55,7 +55,7 @@ function BusinessItem({business,showDir=false}) {
             alt={business.name}
             width={180}
             height={80}
-            className='rounded-lg object-cover h-[90px] '
+            className='rounded-lg object-cover h-[100px] '
         />
          <h2 className='text-[13px] font-bold mt-1 line-clamp-1'>{business.name}</h2>
                 <h2 className='text-[10px] text-gray-400 
