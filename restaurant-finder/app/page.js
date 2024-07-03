@@ -71,15 +71,15 @@ export default function Home() {
     <div className='grid 
     grid-cols-1
     md:grid-cols-4 '>
-        <div className='p-3'>
+        <div className='p-3 '>
            <CategoryList onCategoryChange={(value)=>setCategory(value)}/>
            <RangeSelect onRadiusChange={(value)=>setRadius(value)}/>
            <SelectRating onRatingChange={(value)=>onRatingChange(value)}/>
         </div>
-        <div className=' col-span-3'>
+        <div className=' col-span-3 '>
           <GoogleMapView  businessList={businessList}/>
           <div className='md:absolute mx-2 w-[98%] md:w-[75%]
-            relative md:bottom-3'>
+            relative md:bottom-5'>
         {!loading?  <BusinessList businessList={businessList} />
           :
           <div className='flex gap-3'>
