@@ -26,7 +26,9 @@ function Markers({business}) {
             >
             <div className='ml-[-90px] mt-[-230px]'>
                 <BusinessItem business={business} showDir={true} />
+                {/* <button id="" onClick={()=>setSelectedBusiness(null)}>X</button>  */}
             </div>
+         
             </OverlayView>:null}
             </MarkerF>
     </div>

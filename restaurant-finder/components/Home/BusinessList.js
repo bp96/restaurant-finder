@@ -25,7 +25,7 @@ function BusinessList({businessList}) {
             strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
     <div className='flex overflow-scroll overflow-x-auto gap-4
-    scrollbar-hide scroll-smooth' ref={elementRef}>
+    no-scrollbar scroll-smooth' ref={elementRef}>
         {businessList.map((item,index)=>index<=7&&(
             <div key={index} onClick={()=>setSelectedBusiness(item)}>
            <BusinessItem business={item}  />

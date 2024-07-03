@@ -21,11 +21,13 @@ export default function Home() {
   const [loading,setLoading]=useState(false);
   const router=useRouter()
   const {userLocation,setUserLocation}=useContext(UserLocationContext);
-  useEffect(()=>{
-    if(!session?.user){
-      router.push('/Login')
-    }
-  },[session])
+
+  // checks if user is signed in, otherwise redirects to login page. Authentication not currently set up so disabled for now.
+  // useEffect(()=>{
+  //   if(!session?.user){
+  //     router.push('/Login')
+  //   }
+  // },[session])
 
   useEffect(()=>{
     getGooglePlace();
@@ -36,7 +38,7 @@ export default function Home() {
     setLoading(true)
 
       GlobalApi.getGooglePlace(category,radius,userLocation.lat,userLocation.lng).then(resp=>{
-        // console.log(resp.data.product.results);
+         console.log(resp.data.product.results);
         setBusinessList(resp.data.product.results);
         setBusinessListOrg(resp.data.product.results);
    setLoading(false)

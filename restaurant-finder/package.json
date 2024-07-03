@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
+    "axios": "^1.7.2",
     "next": "14.2.4",
     "next-auth": "^4.24.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "20.14.9",

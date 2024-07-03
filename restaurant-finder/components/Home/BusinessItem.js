@@ -74,7 +74,9 @@ function BusinessItem({business,showDir=false}) {
               <span className='border-[1px] p-1 rounded-full
               border-blue-500
               hover:text-white
-              hover:bg-blue-500' onClick={()=>onDirectionClick()} >Get Direction</span></h2>
+              hover:bg-blue-500' onClick={()=>onDirectionClick()} >Get Directions</span></h2>
+              {/* <button id="" onClick={()=>{console.log("CLOSE")}}>X</button> */}
+
             </div>:null}
     </div>
   )
