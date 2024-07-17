@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SkeltonLoading() {
+function SkeletonLoading() {
   return (
     <div>
         <div className="border bg-white shadow rounded-md p-2 w-[187px]">
@@ -23,4 +23,4 @@ function SkeltonLoading() {
   )
 }
 
-export default SkeltonLoading
+export default SkeletonLoading

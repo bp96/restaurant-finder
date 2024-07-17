@@ -1,5 +1,4 @@
 "use client"
-import HeaderNavBar from '@/components/HeaderNavBar'
 import Provider from './Provider'
 import './globals.css'
 import { Raleway } from 'next/font/google'
@@ -7,13 +6,7 @@ import { useEffect, useState } from 'react'
 import { UserLocationContext } from '@/context/UserLocationContext'
 import { SelectedBusinessContext } from '@/context/SelectedBusinessContext'
 
-
 const raleway = Raleway({ subsets: ['latin'] })
-
-const metadata = {
-  title: '',
-  description: '',
-}
 
 export default function RootLayout({ children }) {
 
@@ -23,6 +16,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     getUserLocation();
   }, [])
+
   const getUserLocation = () => {
     navigator.geolocation.getCurrentPosition(function (pos) {
       console.log(pos)
@@ -39,7 +33,6 @@ export default function RootLayout({ children }) {
         <Provider>
           <SelectedBusinessContext.Provider value={{ selectedBusiness, setSelectedBusiness }}>
             <UserLocationContext.Provider value={{ userLocation, setUserLocation }}>
-              <HeaderNavBar />
               {children}
             </UserLocationContext.Provider>
           </SelectedBusinessContext.Provider>

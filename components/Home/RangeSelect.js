@@ -1,26 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-function RangeSelect({onRadiusChange}) {
-    const [radius,setRadius]=useState(2500);
+// component for the slider that determines the range to look for
+function RangeSelect({ onRadiusChange }) {
+  const [radius, setRadius] = useState(2500);
   return (
-    <div className='mt-5 px-2'>
-        <h2
-        className='font-bold '
-        >Select Radius (in metres)</h2>
-        <input type='range'
-        className='w-full h-2 bg-gray-200
+    <div className="mt-5 px-2">
+      <h2 className="font-bold ">Select Radius (in metres)</h2>
+      <input
+        type="range"
+        className="w-full h-2 bg-gray-200
         rounded-lg appearance-none
-        cursor-pointer '
+        cursor-pointer "
         min="500"
         max="5000"
         step="500"
-        onChange={(e)=>{setRadius(e.target.value);onRadiusChange(e.target.value)}}
+        onChange={(e) => {
+          setRadius(e.target.value);
+          onRadiusChange(e.target.value);
+        }}
         defaultValue={radius}
-        />
-        <label className='text-gray-500
-        text-[15px]'>{radius}m</label>
+      />
+      <label
+        className="text-gray-500
+        text-[15px]"
+      >
+        {radius}m
+      </label>
     </div>
-  )
+  );
 }
 
-export default RangeSelect
+export default RangeSelect;
